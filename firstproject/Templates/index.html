@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+{{name}}
+<div class="container">
+    <div class="jumbotron">
+        <h1>Hello Komal here</h1>
+        <p>Anything</p>
+        <h2>Python Training</h2>
+    </div>
+</div>
+
+<img src = '{% static 'python_logo.png' %}'>
+
+</body>
+</html>

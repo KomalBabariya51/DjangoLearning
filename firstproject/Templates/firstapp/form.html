@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Fill in the Form</h1>
+        <h2>Welcome to Consultadd</h2>
+        <form method="post">
+        {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit", class="btn btn-primary", value="Login">
+    </div>
+</div>
+</form>
+</body>
+</html>
